@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Help Center"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:paddingTop="16dp"
+            android:paddingBottom="7dp"/>
+
+
+        <ScrollView
+            android:layout_below="@id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="65dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/FAQ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FAQ"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_below="@+id/title"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How to add a user?"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="To add a new user to the application, simply click on the 'Add User' floating button on the home screen. You will be prompted to enter the user's name and phone number. After you enter the details, new entry will be added to customer list and a unique ID will also be generated for the user."
+                    android:textSize="16sp"
+                    android:textColor="@color/theme_blue"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How to view user information and purchase history?"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="To view a user's information and purchase history, simply click on the user's name on the home screen. This will take you to the user's information page, where you can see their balance amount, purchase history, and other details."
+                    android:textSize="16sp"
+                    android:textColor="@color/theme_blue"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How to send a reminder SMS to a user?"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="To send a reminder SMS to a user about their balance amount, go to the user's information page and click on the 'Send SMS' button. This will automatically send an appropriate message to user about their balance amount"
+                    android:textSize="16sp"
+                    android:textColor="@color/theme_blue"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Guidelines for using the Sarbhan Doodh Bhandar application:"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="8dp"
+                    android:textAlignment="textStart"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Make sure to keep the application data up-to-date, especially the balance amounts of each user.\n\n2. Use the reminder SMS feature to keep your customers informed about their balance amount.\n\n3. Backup your data regularly to avoid data loss in case of device failure."
+                    android:textSize="16sp"
+                    android:textColor="@color/theme_blue"/>
+
+                <!-- Add more questions and answers as needed -->
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+</RelativeLayout>

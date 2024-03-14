@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/background_border"
+    android:elevation="3dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginHorizontal="10dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/date_time_layout"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 Feb 23:23:34 PM"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product: Milk"
+            android:layout_below="@+id/date_time"
+            android:textSize="12dp"
+
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/red_layout"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@color/light_red"
+        >
+
+        <TextView
+            android:id="@+id/sold_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:textColor="@color/red"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/taken_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+            android:textSize="22dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

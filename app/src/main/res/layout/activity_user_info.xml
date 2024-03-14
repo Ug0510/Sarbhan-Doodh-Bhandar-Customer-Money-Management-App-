@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User_info">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/theme_blue"
+        android:layout_alignParentTop="true"
+        >
+
+        <ImageView
+            android:id="@+id/layout_1"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/left_arrow"
+            android:layout_alignParentStart="true"
+            />
+
+
+        <TextView
+            android:id="@+id/customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Name"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10sp"
+            android:layout_toRightOf="@+id/layout_1"
+            android:layout_marginTop="17dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customer_name"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/btn_reset"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/reset"
+                android:layout_toLeftOf="@id/pdf_download"
+                android:layout_marginRight="30dp"
+                />
+
+            <ImageView
+                android:id="@+id/pdf_download"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/pdf"
+                android:layout_toLeftOf="@id/message_alert"
+                android:layout_marginRight="30dp"/>
+
+            <ImageView
+                android:id="@+id/message_alert"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/sms"
+                android:layout_alignParentEnd="true"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/balance_amount_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/theme_blue">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="60dp"
+            android:background="@drawable/background_border">
+
+            <TextView
+                android:id="@+id/amountStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Balance Amount"
+                android:textSize="22dp"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/amount_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 0"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/new_purchase_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/balance_amount_bar"
+        android:paddingVertical="10dp"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Purchase"
+            android:textSize="18dp"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp">
+
+            <Button
+                android:id="@+id/btn_milk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Milk"
+                android:layout_marginRight="10dp" />
+
+            <Button
+                android:id="@+id/btn_curd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Curd"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/btn_others"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Other" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray_light"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/new_purchase_bar">
+
+        <TextView
+            android:id="@+id/entries_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ENTRIES"
+            android:textSize="14dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"/>
+        <LinearLayout
+            android:id="@+id/column_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/entries_textview"
+            android:paddingHorizontal="15dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Date,Time"
+                android:textSize="12dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Sold Amount"
+                android:textSize="12dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Taken Amount"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/column_name"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
