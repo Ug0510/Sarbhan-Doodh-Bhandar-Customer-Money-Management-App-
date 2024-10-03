@@ -27,6 +27,5 @@
   </tr>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/806e878b-a772-4980-b51e-3703536855a0" width="300" /></td>
-    <td><img src="https://github.com/user-attachments/assets/d0ac68d006335ca2a2e44d28b3d8b80e" width="300" /></td>
   </tr>
 </table>
